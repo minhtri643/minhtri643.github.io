@@ -1,0 +1,91 @@
+/* Định dạng cho toàn trang */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d0e7ff; /* Màu xanh dương nhạt */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Tiêu đề */
+header {
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+    font-style: italic;
+    color: #333;
+}
+
+/* Nội dung */
+.content {
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+/* Tiêu đề của các phần */
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+/* Lưới bài tập */
+.exercise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.exercise-box {
+    padding: 40px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.exercise-box:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Danh sách không có ký hiệu */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* Định dạng cho các liên kết */
+a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Định dạng phần chân trang */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
