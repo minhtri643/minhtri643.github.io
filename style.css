@@ -1,5 +1,5 @@
 /* Định dạng cho toàn trang với ảnh nền tùy chỉnh */
-body {
+html, body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     justify-content: flex-start; /* Căn nội dung từ trên xuống */
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Đảm bảo chiều cao tối thiểu 100% */
     /* Đổi ảnh nền */
     background: url('https://image.nhandan.vn/1200x630/Uploaded/2024/athlrainagbna/2023_03_08/tri-tue-nhan-tao-ai-2-3436.jpg.webp') no-repeat center center fixed;
     background-size: cover; /* Điều chỉnh ảnh để bao phủ toàn bộ nền */
@@ -105,10 +105,10 @@ h2 {
 
 /* Footer và biểu tượng liên lạc */
 footer {
-    position: absolute;
-    bottom: 20px;
     width: 100%;
     text-align: center;
+    margin-top: auto; /* Đưa footer xuống cuối trang */
+    padding: 20px 0;
 }
 
 .contact-icons {
